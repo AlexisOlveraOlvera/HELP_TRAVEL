@@ -1,0 +1,373 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mecalogik.help_travel.PenaTourFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagePrin"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ht" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imagePrin"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagePrin"
+                app:srcCompat="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imagePrin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="LA PEÑA TOURS"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar"/>
+
+            <Button
+                android:id="@+id/resrvarbtnPena"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buttondos"
+                android:layout_marginTop="40dp"
+                android:textSize="15sp"
+                android:text="DA clic y reserva" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/resrvarbtnPena"
+                android:layout_alignBottom="@+id/resrvarbtnPena"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/buttondos"
+                android:textSize="12sp"
+                android:text="Facebook" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/resrvarbtnPena"
+                android:layout_alignBottom="@+id/resrvarbtnPena"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/buttondos"
+                android:text="Ubicación "
+                android:textSize="12sp" />
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/resrvarbtnPena"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@android:color/white"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:text="RECORRIDO PUEBLO Y PEÑA"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:text="- Calles principales (Casas reales, Capilla de la Santa Cruz, Cuartel)\n- Mirador\n- Museo de leyendas (Las Historias de Don Berna)\n- Museo del cuarzo\n- Explanada de la peña (Tiempo libre)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text=""
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 1h:40 min."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Guía de Turistas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imagePenatour"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+                //------------------------------------------------------------//
+
+                <TextView
+                    android:text="RUTA DEL VINO"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="- Finca de Vinos Freixenet\n- Apiario\n- Castillo del chocolate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text=""
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 4h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Guía de Turistas\n- Cata de Vino\n- Maridaje con Queso y Fruta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imagePenaVino"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+                //----------------------------------------------------------------------///
+
+
+                <TextView
+                    android:text="RUTA DEL QUESO Y EL VINO"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="- Finca de Vinos Freixenet\n- Finca de quesos Vai\n- Restaurante\n- Apiario\n- Castillo del chocolate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text=""
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 8h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Guía de Turistas\n- Cata de Vino\n- Maridaje con Queso y Fruta\n- Entradas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imagePenaQV"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+
+
+                //-----------------------------------------------------------------------------//
+
+
+
+                <TextView
+                    android:text="ESCALADA A LA PEÑA"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="- Guía turística\n- Equipo\n- Clase de rappel\n- Clase de escalada\n- Fotos\n- Seguro\n- Hidratación."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text=""
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 5h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <ImageView
+                    android:id="@+id/imagePenaEsca"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+
+                //-----------------------------------------------------------------------------//
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

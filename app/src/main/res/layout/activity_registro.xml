@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_gradient_style"
+    tools:context="com.mecalogik.help_travel.RegistroActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/graduate_regular"
+        android:text="HELP TRAVEL"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/nombreEtxR"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="92dp" />
+
+
+    <EditText
+        android:id="@+id/nombreEtxR"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/correoEtxR"
+        android:layout_below="@+id/titulo"
+        android:fontFamily="@font/cinzel_bold"
+        android:hint="Nombres"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/correoEtxR"
+        tools:layout_editor_absoluteX="67dp" />
+
+    <EditText
+        android:id="@+id/areatxR"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombreEtxR"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/cinzel_bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="Apellidos"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/correoEtxR"
+        tools:layout_editor_absoluteX="67dp" />
+
+
+    <EditText
+        android:id="@+id/correoEtxR"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/areatxR"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/areatxR"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/cinzel_bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:hint="Correo Electrónico"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/contraseñaEtxR"
+        tools:layout_editor_absoluteX="67dp" />
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/contraseñaEtxR"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/correoEtxR"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:fontFamily="@font/cinzel_bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:password="true"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/contraseñaConfirEtxR"
+        tools:layout_editor_absoluteX="67dp" />
+
+
+    <EditText
+        android:id="@+id/contraseñaConfirEtxR"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/contraseñaEtxR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        android:fontFamily="@font/cinzel_bold"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:password="true"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/accesobtnR"
+        tools:layout_editor_absoluteX="67dp" />
+
+    <Button
+        android:id="@+id/accesobtnR"
+        android:layout_width="250dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/contraseñaConfirEtxR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="Registrarse"
+        android:fontFamily="@font/cinzel_bold"
+        android:textSize="30sp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="67dp" />
+
+
+</RelativeLayout>

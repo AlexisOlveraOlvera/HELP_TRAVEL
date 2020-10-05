@@ -1,0 +1,466 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mecalogik.help_travel.AcueducFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagePrin"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logo_new" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imagePrin"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagePrin"
+                app:srcCompat="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imagePrin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Acueductours"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar"/>
+
+            <Button
+                android:id="@+id/resrvarbtnAcu"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buttondos"
+                android:layout_marginTop="40dp"
+                android:textSize="15sp"
+                android:text="DA clic y reserva" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/resrvarbtnAcu"
+                android:layout_alignBottom="@+id/resrvarbtnAcu"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/buttondos"
+                android:textSize="12sp"
+                android:text="Facebook" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/resrvarbtnAcu"
+                android:layout_alignBottom="@+id/resrvarbtnAcu"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/buttondos"
+                android:text="Ubicación "
+                android:textSize="12sp" />
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/resrvarbtnAcu"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:text="Tour Peña de Bernal"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:text="- Mirador a la Peña\n- El cuartel\n- Explanada de la Peña\n- Museo Historias de Don Berna (Descenso)\n- Periferia del Pueblo (Abordo)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$150 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 1h:40 min."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="Salidas cada hora a partir de las 10:00 a.m. hasta las 5:00 p.m. (5 min. de tolerancia)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Acceso a la Peña\n- Entrada al Museo\n- Guía de Turistas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageAcueTours"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+                //------------------------------------------------------------//
+
+                <TextView
+                    android:text="Ruta del Vino"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="- Centro de Bernal\n- Finca de Vinos Freixenet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$700 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 3h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text="Salidas 8:00 a.m. y 2:30 p.m. (5 min. de tolerancia)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Guía de Turistas\n- Cata de Vino espumoso\n- Maridaje con Queso y Fruta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageVino"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+                //----------------------------------------------------------------------///
+
+
+                <TextView
+                    android:text="Ruta del Queso y Vino"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="– Finca de Quesos VAI\n– Pueblo Mágico de Bernal (centro)\n– Finca de Vinos Freixenet\n– Restaurante
+"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$1100 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 6 a 7h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text="Salidas 10:00 a.m. (5 min. de tolerancia) "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Guía de Turistas\n- Cata de Vino\n- Maridaje con Queso y Fruta\n- Entradas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageQV"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+
+
+                //-----------------------------------------------------------------------------//
+
+
+
+                <TextView
+                    android:text="Tour Ecoturístico"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="– Zona protegida Chichidó\n– Pinturas rupestres\n– Manantiales\n– Enigmático lugar donde el Eco se repite 7 veces.\n– Cuevas\n– Calera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$600 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 3h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text="Salidas 8:00 a.m. (5 min. de tolerancia) "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Guía de Turistas\n- Entradas\n- Senderismo\n- Observación de Aves\n- Almuerzo (2 gorditas y 1 bebida)\n- Botella de agua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageEco"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+
+                //-----------------------------------------------------------------------------//
+
+
+
+                <TextView
+                    android:text="Vuela en Globo"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="– Globo puerto (Hacienda Tres Vidas)\n– Varios paisajes de Tequisquiapan según los guíe el viento.\n– Restaurante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$2300 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 3 a 4h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text="Salidas 5:00 a.m. (5 min. de tolerancia)\nSalimos de recepción de su hotel siempre y cuando este en Bernal."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="Vuelo en globo de 40 a 60 minutos\nDesayuno según el menú establecido\nBrindis con el capitán según la tradición"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Recomendaciones para el tour:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- En temporada invernal usar ropa y calzado cómodo y abrigador.\n- En temporada lluviosa el vuelo se cancela\n- No olvides llevar tu cámara fotográfica."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageGlobo"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

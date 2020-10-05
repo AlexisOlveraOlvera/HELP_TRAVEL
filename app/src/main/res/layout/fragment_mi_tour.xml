@@ -1,0 +1,390 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mecalogik.help_travel.MiTourFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagePrin"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ht" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_below="@+id/imagePrin"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagePrin"
+                app:srcCompat="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imagePrin"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Mi Tour"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_below="@+id/textView2"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar"/>
+
+            <Button
+                android:id="@+id/resrvarbtnMitour"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buttondos"
+                android:layout_marginTop="40dp"
+                android:textSize="15sp"
+                android:text="DA clic y reserva" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/resrvarbtnMitour"
+                android:layout_alignBottom="@+id/resrvarbtnMitour"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/buttondos"
+                android:textSize="12sp"
+                android:text="Facebook" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/resrvarbtnMitour"
+                android:layout_alignBottom="@+id/resrvarbtnMitour"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/buttondos"
+                android:text="Ubicación "
+                android:textSize="12sp" />
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/resrvarbtnMitour"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:text="Un Vistazo a la Peña"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:text="- Mirador a la Peña\n- Explanada de la Peña\n- Un Museo\n- Principales calles (el baratillo, la capilla)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$200 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 1h:15 min."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="Salidas a partir 9:30 a.m."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="-Transporte\n-Entrada al Museo\n-Guía de Turistas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageMiTour"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+                //------------------------------------------------------------//
+
+                <TextView
+                    android:text="Tour del Vino"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="- Vivero de cactus\n- Finca de Vinos Freixenet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$650 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 3h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text="Salidas a partir 9:30 a.m."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Guía de Turistas\n- Degustación de Queso y Vino\n- Copa de cristal de recuerdo\n- Entradas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageMiVino"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+                //----------------------------------------------------------------------///
+
+
+                <TextView
+                    android:text="Tour del Queso y el Vino"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="– Finca de Quesos VAI\n– Tequisquiapan Pueblo Mágico\n– Finca de Vinos Freixenet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$1200 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 6 a 7h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text="Salidas 10:00 a.m. (5 min. de tolerancia) "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Transporte\n- Guía de Turistas\n- Cata de Vino\n- Degustación de Queso y Vino\n- Entradas\n- Comida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageMiQV"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+
+
+                //-----------------------------------------------------------------------------//
+
+
+
+
+
+                <TextView
+                    android:text="Vuela en Globo"
+                    android:textColor="#00a6ff"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Lugares a visitar:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+                <TextView
+                    android:text="– Globo puerto (Hacienda Tres Vidas)\n– Varios paisajes de Tequisquiapan según los guíe el viento.\n– Restaurante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:text="$2300 p/p"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:text="Duración 3 a 4h."
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+
+
+                <TextView
+                    android:text="Salidas 6:00 a.m."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="Incluye:"
+                    android:textColor="#00a6ff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:text="- Vuelo en globo de 40 a 60 minutos\n- Desayuno\n- Brindis con el capitán\n- Certificado de vuelo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:text="En temporada lluviosa el vuelo se cancela"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <ImageView
+                    android:id="@+id/imageMiGlobo"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ht" />
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

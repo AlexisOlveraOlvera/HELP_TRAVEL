@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Tours">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_acueduc"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="AcueducTour" />
+                <item
+                    android:id="@+id/nav_mitour"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Mi Tuor" />
+                <item
+                    android:id="@+id/nav_mototours"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Moto Tours" />
+                <item
+                    android:id="@+id/nav_peñatours"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Peña Tours" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Museos">
+        <menu>
+            <item
+                android:id="@+id/nav_don_berna"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Don Berna" />
+            <item
+                android:id="@+id/nav_museo_insecto"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Museo de Insectos" />
+        </menu>
+    </item>
+
+
+    <item android:title="Configuraciones">
+        <menu>
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="Cerrar Sesión" />
+
+        </menu>
+    </item>
+
+</menu>

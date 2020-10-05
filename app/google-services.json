@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "127346800884",
+    "firebase_url": "https://helptravel-da9b2.firebaseio.com",
+    "project_id": "helptravel-da9b2",
+    "storage_bucket": "helptravel-da9b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127346800884:android:3a636014b3a4c8c52bc6a1",
+        "android_client_info": {
+          "package_name": "com.mecalogik.help_travel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127346800884-vm48h3h8vnm0aciqe47kpunpr7rtnqnm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mecalogik.help_travel",
+            "certificate_hash": "dcc757837a442b1f979b0a9886af280cfb53323b"
+          }
+        },
+        {
+          "client_id": "127346800884-hq618s4qblsd5hmp4bffl0ft7ppf4563.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-Or3ryeC1yJKgQN65ggbgZpgV-f9BJrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127346800884-hq618s4qblsd5hmp4bffl0ft7ppf4563.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

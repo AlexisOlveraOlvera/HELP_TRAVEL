@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/s"
+    tools:context="com.mecalogik.help_travel.ToursActivity">
+
+
+
+ <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <LinearLayout
+                 android:layout_margin="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+
+
+                 <ImageView
+                     android:id="@+id/imageAcueductour"
+                     android:layout_width="0dp"
+                     android:layout_height="153dp"
+                     android:layout_weight="1"
+                     android:layout_marginTop="3dp"
+                     android:layout_marginRight="3dp"
+                     android:layout_marginLeft="3dp"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/logo_new"/>
+
+
+
+                 <Space
+                     android:layout_width="10dp"
+                     android:layout_height="wrap_content" />
+
+                 <ImageView
+                     android:id="@+id/imageMitour"
+                     android:layout_width="0dp"
+                     android:layout_height="153dp"
+                     android:layout_weight="1"
+                     android:layout_marginTop="3dp"
+                     android:layout_marginRight="3dp"
+                     android:layout_marginLeft="3dp"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/logo_new"/>
+
+
+
+             </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_margin="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+
+                 <ImageView
+                     android:id="@+id/imageMotoTour"
+                     android:layout_width="0dp"
+                     android:layout_height="153dp"
+                     android:layout_weight="1"
+                     android:layout_marginTop="3dp"
+                     android:layout_marginRight="3dp"
+                     android:layout_marginLeft="3dp"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/logo_new"/>
+
+
+
+                 <Space
+                     android:layout_width="10dp"
+                     android:layout_height="wrap_content" />
+
+
+
+
+                 <ImageView
+                     android:id="@+id/imagePeñaTour"
+                     android:layout_width="0dp"
+                     android:layout_height="153dp"
+                     android:layout_weight="1"
+                     android:layout_marginTop="3dp"
+                     android:layout_marginRight="3dp"
+                     android:layout_marginLeft="3dp"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/logo_new"/>
+
+
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_margin="10dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+
+                 <ImageView
+                     android:id="@+id/image1"
+                     android:layout_width="0dp"
+                     android:layout_height="153dp"
+                     android:layout_weight="1"
+                     android:layout_marginTop="3dp"
+                     android:layout_marginRight="3dp"
+                     android:layout_marginLeft="3dp"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/logo_new"/>
+
+
+
+                 <Space
+                     android:layout_width="10dp"
+                     android:layout_height="wrap_content" />
+
+
+
+
+                 <ImageView
+                     android:id="@+id/image2"
+                     android:layout_width="0dp"
+                     android:layout_height="153dp"
+                     android:layout_weight="1"
+                     android:layout_marginTop="3dp"
+                     android:layout_marginRight="3dp"
+                     android:layout_marginLeft="3dp"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/logo_new"/>
+
+
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HELP_TRAVEL</string>
+    <string name="title_activity_acueduc_desple">Menú Principal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mi_tour">Menú Principal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_menu_desple2">MenuDesple2Activity</string>
+    <string name="title_activity_museos2">Museos2Activity</string>
+    <string name="title_activity_mi_tour_desple">Menú Principal</string>
+    <string name="title_activity_moto_desple">MotoDespleActivity</string>
+    <string name="title_activity_don_berna_desple">Menú Principal</string>
+    <string name="title_activity_pena_tour">Menú Principal</string>
+    <string name="title_activity_don_berna_maps">Map</string>
+</resources>
